@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>说说女人 | zltty的博客</title>
+    <meta property="og:title" content="说说女人 - zltty的博客" />
+    <meta property="og:type" content="article" />
+
+    <meta
+      property="article:published_time"
+      content="2020-08-11T23:09:30&#43;08:00"
+    />
+
+    <meta
+      property="article:modified_time"
+      content="2020-08-11T23:09:30&#43;08:00"
+    />
+
+    <meta
+      name="Keywords"
+      content="电影,文化,读书笔记,zltty,创业,数据分析，博客,项目管理,python,软件架构,公众号,小程序"
+    />
+    <meta name="description" content="说说女人" />
+
+    <meta name="author" content="zltty" />
+    <meta
+      property="og:url"
+      content="//zltty.github.io/post/%E5%A6%82%E4%BD%95%E5%81%9A%E5%AE%B6%E6%97%8F%E9%87%8C%E7%9A%84%E5%A5%B3%E4%BA%BA/"
+    />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <script
+      type="text/javascript"
+      src="//cdn.bootcdn.net/ajax/libs/jquery/3.4.1/jquery.min.js"
+    ></script>
+
+    <link rel="stylesheet" href="/css/douban.css" />
+
+    <link rel="stylesheet" href="/css/other.css" />
+  </head>
+
+  <body>
+    <header id="header" class="clearfix">
+      <div class="container">
+        <div class="col-group">
+          <div class="site-name">
+            <a id="logo" href="//zltty.github.io"> zltty的博客 </a>
+
+            <p class="description">
+              探索发现，分享记录。
+            </p>
+          </div>
+          <div>
+            <nav id="nav-menu" class="clearfix">
+              <a class="current" href="//zltty.github.io">首页</a>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div id="body">
+      <div class="container">
+        <div class="col-group">
+          <div class="col-8" id="main">
+            <div class="res-cons">
+              <style type="text/css">
+                .post-toc {
+                  position: fixed;
+                  width: 200px;
+                  margin-left: -210px;
+                  padding: 5px 10px;
+                  font-family: Athelas, STHeiti, Microsoft Yahei, serif;
+                  font-size: 12px;
+                  border: 1px solid rgba(0, 0, 0, 0.07);
+                  border-radius: 5px;
+                  background-color: rgba(255, 255, 255, 0.98);
+                  background-clip: padding-box;
+                  -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.125);
+                  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.125);
+                  word-wrap: break-word;
+                  white-space: nowrap;
+                  -webkit-box-sizing: border-box;
+                  box-sizing: border-box;
+                  z-index: 999;
+                  cursor: pointer;
+                  max-height: 70%;
+                  overflow-y: auto;
+                  overflow-x: hidden;
+                }
+
+                .post-toc .post-toc-title {
+                  width: 100%;
+                  margin: 0 auto;
+                  font-size: 20px;
+                  font-weight: 400;
+                  text-transform: uppercase;
+                  text-align: center;
+                }
+
+                .post-toc .post-toc-content {
+                  font-size: 15px;
+                }
+
+                .post-toc .post-toc-content > nav > ul {
+                  margin: 10px 0;
+                }
+
+                .post-toc .post-toc-content ul {
+                  padding-left: 20px;
+                  list-style: square;
+                  margin: 0.5em;
+                  line-height: 1.8em;
+                }
+
+                .post-toc .post-toc-content ul ul {
+                  padding-left: 15px;
+                  display: none;
+                }
+
+                @media print, screen and (max-width: 1057px) {
+                  .post-toc {
+                    display: none;
+                  }
+                }
+              </style>
+              <div class="post-toc" style="position: absolute; top: 188px">
+                <h2 class="post-toc-title">文章目录</h2>
+                <div class="post-toc-content">
+                  <nav id="TableOfContents">
+                    <ul>
+                      <li>
+                        <a href="#地势坤君子以厚德载物"
+                          >地势坤，君子以厚德载物</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#要事业有所成就还是要狠"
+                          >要事业有所成就——还是要狠</a
+                        >
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+              <script type="text/javascript">
+                $(document).ready(function () {
+                  var postToc = $(".post-toc");
+                  if (postToc.length) {
+                    var leftPos = $("#main").offset().left;
+                    if (leftPos < 220) {
+                      postToc.css({
+                        width: leftPos - 10,
+                        "margin-left": 0 - leftPos,
+                      });
+                    }
+
+                    var t = postToc.offset().top - 20,
+                      a = {
+                        start: {
+                          position: "absolute",
+                          top: t,
+                        },
+                        process: {
+                          position: "fixed",
+                          top: 20,
+                        },
+                      };
+                    $(window).scroll(function () {
+                      var e = $(window).scrollTop();
+                      e < t ? postToc.css(a.start) : postToc.css(a.process);
+                    });
+                  }
+                });
+              </script>
+              <article class="post">
+                <header>
+                  <h1 class="post-title">说说女人</h1>
+                </header>
+                <date class="post-meta meta-date"> 2020年8月11日 </date>
+
+                <div class="post-meta">
+                  <span>|</span>
+
+                  <span class="meta-category"
+                    ><a
+                      href="//zltty.github.io/categories/%E7%BA%A2%E8%89%B2%E7%94%9F%E6%B4%BB"
+                      >红色生活</a
+                    ></span
+                  >
+                </div>
+
+                <div class="post-meta">
+                  <span id="busuanzi_container_page_pv"
+                    >|<span id="busuanzi_value_page_pv"></span
+                    ><span> 阅读</span></span
+                  >
+                </div>
+
+                <div class="post-content">
+                  <p>
+                    古往今来，一个家族的女人很影响这个家族的命运。看完红楼梦，联想到自己的经历和其他历史人物，能发现一些道理，比如红楼梦的贾母当家和凤姐当家完全不一样，如果秦可卿能当家，说不定真的能为之计长远。
+                  </p>
+                  <h2 id="地势坤君子以厚德载物">地势坤，君子以厚德载物</h2>
+                  <p>
+                    做旺家的女人，还是要厚德载物。积德积福，而不要如红楼梦里的聪明做尽的凤姐，也不要如拎不清，心胸狭窄，没一点修为的赵姨娘。可以多受一点委屈，多吃一点亏。长远看，这样的女人容易兴旺家族。去年拜访我姥姥出生的村子，人家都评价姥姥是十里八村里最好的姑娘。大方，聪明，隐忍，善良，自己受很多委屈都自己咽，从来不搬弄是非，勤俭持家，很不容易的几乎一个人拉扯大三个孩子。我们家族感觉虽然没有大富大贵，但是人都很本分善良，踏实。那些老人去世，兄弟子妹为争遗产大打出手是绝对不会在我们家里出现。大家都很敬重姥姥，因为姥姥对每个人都很好，而且不偏不倚，努力的做到公正，对家人善良，对外人也善良，很能替别人着想，总是把自己的需求放在最后。对家人，姥姥小时候做为老大，放弃她读书的机会让给她妹妹，对外人，每次讨饭的上门，我姥姥都是拿家里最好的食物给人家，有时我都觉得有点奢侈，姥姥只是轻声说，人家很不容易。她也是我们家族的主心骨，能凝聚家族的人心，不是通过立威而是通过爱。
+                  </p>
+                  <p>
+                    姥姥去世的时候，很多人来祭拜，有些人只是一面之缘，都对姥姥很敬重，都曾受过她的恩惠和好意。姥姥也是一位普通妇女，一位退休员工，无权无名，也不能说会道，只是默默无闻的付出，她去世得到后人赞不绝口的称赞，有这么多人为她送行，核心是她的人品。厚德载物，也托起了我们，让我们生活在一个很和谐的家族。此谓：
+                  </p>
+                  <blockquote>
+                    <p>积善之家，必有余庆；积不善之家，必有余殃。</p>
+                  </blockquote>
+                  <blockquote>
+                    <p>桃李不言，下自成蹊</p>
+                  </blockquote>
+                  <p>后辈们要继续积福德。</p>
+                  <p>
+                    福慧双修，福气积攒了，智慧才会提升，两者螺旋上升。只有智慧没有福德的人往往聪明反被聪明误。正可谓：
+                  </p>
+                  <blockquote>
+                    <p>机关算尽太聪明，反误了卿卿性命</p>
+                  </blockquote>
+                  <p>
+                    有德有慧有貌有才的女人人间少有，我姥姥也就占了一个有德有慧，就这都已经很艰难。比如林黛玉有才有貌，已经稀世罕见了。
+                  </p>
+                  <p>有德温顺的女人，与之对照的就是狠女人。</p>
+                  <h2 id="要事业有所成就还是要狠">要事业有所成就——还是要狠</h2>
+                  <p>
+                    史记里唯一的女性本纪——吕太后本纪里，写吕后，有谋略同时刚毅，杀伐决断甚至都在刘邦之上，是个狠角色，她比武则天要早做到了最高权势的“女皇”。类似了王熙凤，又类似了汪精卫的妻子陈璧君。她为了复兴他们吕氏家族也是用尽心思，到头来子女全亡，孤家寡人死去。而最弱最不起眼没有存在感的薄姬儿子成了汉文帝。性格弱，的确没法做到顶级领导，但会有一些好的运势，也正是应了道德经的强弱之变，天道如此。
+                  </p>
+                  <p>
+                    对自己狠，能自律，能下功夫，比男人十倍的努力；对别人狠，佛挡杀佛，果断利落，而没有妇人之仁。好比毛主席的这句诗：
+                  </p>
+                  <blockquote>
+                    <p>宜将剩勇追穷寇，不可沽名学霸王。</p>
+                  </blockquote>
+                  <p>
+                    蒋介石看似心狠手辣，骨子里还是有一点妇人之仁，没有狠彻底。刘邦顾忌不想杀韩信，吕后却让刘邦下去手，心狠手辣，以求去除后患。说起女人里，希拉里也是这号人物。以前一篇微信写过她。武则天可以为了上位掐死自己的孩子，希拉里也是可以为了上位谋划丈夫出轨（克林顿的故事很可能有另一版本），韩国总统朴槿惠为了政治理想终身不嫁。她们也都能付出普通人做不到的代价，因为她们目标明确，能狠下心来，做对的事情，而不是感觉好的事情。要去男性主导的世界做那个王，那要付出的也不是普通人的代价。
+                  </p>
+                </div>
+
+                <div class="post-meta meta-tags">
+                  <ul class="clearfix">
+                    <li>
+                      <a href="//zltty.github.io/tags/%E4%BA%BA%E6%80%A7"
+                        >人性</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </article>
+
+              <div id="disqus_thread"></div>
+              <script type="application/javascript">
+                var disqus_config = function () {};
+                (function () {
+                  if (
+                    ["localhost", "127.0.0.1"].indexOf(
+                      window.location.hostname
+                    ) != -1
+                  ) {
+                    document.getElementById("disqus_thread").innerHTML =
+                      "Disqus comments not available by default when the website is previewed locally.";
+                    return;
+                  }
+                  var d = document,
+                    s = d.createElement("script");
+                  s.async = true;
+                  s.src = "//" + "zlttyblog" + ".disqus.com/embed.js";
+                  s.setAttribute("data-timestamp", +new Date());
+                  (d.head || d.body).appendChild(s);
+                })();
+              </script>
+              <noscript
+                >Please enable JavaScript to view the
+                <a href="https://disqus.com/?ref_noscript"
+                  >comments powered by Disqus.</a
+                ></noscript
+              >
+              <a href="https://disqus.com" class="dsq-brlink"
+                >comments powered by <span class="logo-disqus">Disqus</span></a
+              >
+
+              <div class="post bg-white">
+                <script
+                  src="https://utteranc.es/client.js"
+                  repo="your github repo"
+                  issue-term="pathname"
+                  theme="github-light"
+                  crossorigin="anonymous"
+                  async
+                ></script>
+              </div>
+            </div>
+
+            <footer id="footer">
+              <div>
+                &copy; 2017 <a href="//zltty.github.io">zltty的博客 By zltty</a>
+                <p><a href="https://beian.miit.gov.cn/#/Integrated/index">粤ICP备18158616号</a></p>
+              </div>
+              <br />
+              <div>
+                <div class="github-badge">
+                  <a href="https://gohugo.io/" target="_black" rel="nofollow"
+                    ><span class="badge-subject">Powered by</span
+                    ><span class="badge-value bg-blue">Hugo</span></a
+                  >
+                </div>
+                <div class="github-badge">
+                  <a
+                    href="https://github.com/flysnow-org/maupassant-hugo"
+                    target="_black"
+                    ><span class="badge-subject">Theme</span
+                    ><span class="badge-value bg-yellowgreen"
+                      >Maupassant</span
+                    ></a
+                  >
+                </div>
+              </div>
+            </footer>
+
+            <script type="text/javascript">
+              window.MathJax = {
+                tex2jax: {
+                  inlineMath: [["$", "$"]],
+                  processEscapes: true,
+                },
+              };
+            </script>
+            <script
+              src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"
+              async
+            ></script>
+
+            <a id="rocket" href="#top"></a>
+            <script
+              type="text/javascript"
+              src="/js/totop.js?v=0.0.0"
+              async=""
+            ></script>
+
+            <script type="application/javascript">
+              var doNotTrack = false;
+              if (!doNotTrack) {
+                window.ga =
+                  window.ga ||
+                  function () {
+                    (ga.q = ga.q || []).push(arguments);
+                  };
+                ga.l = +new Date();
+                ga("create", "225213626", "auto");
+
+                ga("send", "pageview");
+              }
+            </script>
+            <script
+              async
+              src="https://www.google-analytics.com/analytics.js"
+            ></script>
+
+            <script
+              type="text/javascript"
+              src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"
+              async
+            ></script>
+
+            <script src="/js/douban.js"></script>
+          </div>
+
+          <div id="secondary">
+            <section class="widget">
+              <form
+                id="search"
+                action="//zltty.github.io/search/"
+                method="get"
+                accept-charset="utf-8"
+                target="_blank"
+                _lpchecked="1"
+              >
+                <input
+                  type="text"
+                  name="q"
+                  maxlength="20"
+                  placeholder="Search"
+                />
+                <input
+                  type="hidden"
+                  name="sitesearch"
+                  value="//zltty.github.io"
+                />
+                <button type="submit" class="submit icon-search"></button>
+              </form>
+            </section>
+
+            <section class="widget">
+              <h3 class="widget-title">最近文章</h3>
+              <ul class="widget-list">
+                <li>
+                  <a href="//zltty.github.io/post/stork/" title="2020年股票总结"
+                    >2020年股票总结</a
+                  >
+                </li>
+
+                <li>
+                  <a href="//zltty.github.io/post/20201211/" title="20201211"
+                    >20201211</a
+                  >
+                </li>
+
+                <li>
+                  <a href="//zltty.github.io/post/20201130/" title="20201130"
+                    >20201130</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    href="//zltty.github.io/post/20201110%E8%9A%82%E8%9A%81%E6%8B%9B%E8%82%A1%E4%B9%A6/"
+                    title="蚂蚁招股书"
+                    >蚂蚁招股书</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    href="//zltty.github.io/post/1108%E8%AF%BB%E4%B9%A6%E4%BC%9A/"
+                    title="1108读书会"
+                    >1108读书会</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    href="//zltty.github.io/post/20201031/"
+                    title="最近发生的两件小事"
+                    >最近发生的两件小事</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    href="//zltty.github.io/post/%E8%80%90%E5%BF%83/"
+                    title="耐心"
+                    >耐心</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    href="//zltty.github.io/post/%E6%88%91%E5%92%8C%E6%88%91%E7%9A%84%E5%AE%B6%E4%B9%A1/"
+                    title="我和我的家乡"
+                    >我和我的家乡</a
+                  >
+                </li>
+
+                <li>
+                  <a href="//zltty.github.io/post/math_note/" title="Math_note"
+                    >Math_note</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    href="//zltty.github.io/post/visionabouttime/"
+                    title="只言片语记录"
+                    >只言片语记录</a
+                  >
+                </li>
+              </ul>
+            </section>
+
+            <section class="widget">
+              <h3 class="widget-title">分类</h3>
+              <ul class="widget-list">
+                <li>
+                  <a
+                    href="//zltty.github.io/categories/%E5%86%85%E5%BE%97%E5%BF%83%E6%BA%90/"
+                    >内得心源 (6)</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    href="//zltty.github.io/categories/%E5%A4%A9%E4%BA%BA%E4%B9%8B%E9%99%85/"
+                    >天人之际 (1)</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    href="//zltty.github.io/categories/%E5%B7%A5%E4%BD%9C%E6%80%9D%E8%80%83%E6%8A%80%E8%83%BD/"
+                    >工作思考技能 (7)</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    href="//zltty.github.io/categories/%E7%BA%A2%E8%89%B2%E7%94%9F%E6%B4%BB/"
+                    >红色生活 (7)</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    href="//zltty.github.io/categories/%E8%A1%8C%E4%B8%87%E9%87%8C%E8%B7%AF/"
+                    >行万里路 (1)</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    href="//zltty.github.io/categories/%E8%AF%BB%E4%B9%A6%E4%B9%90%E4%BA%8B/"
+                    >读书乐事 (5)</a
+                  >
+                </li>
+              </ul>
+            </section>
+
+            <section class="widget">
+              <h3 class="widget-title">标签</h3>
+              <div class="tagcloud">
+                <a href="//zltty.github.io/tags/%E4%BA%BA%E6%80%A7/">人性</a>
+
+                <a
+                  href="//zltty.github.io/tags/%E5%9B%BD%E5%86%85%E6%97%B6%E4%BA%8B/"
+                  >国内时事</a
+                >
+
+                <a href="//zltty.github.io/tags/%E5%BF%83%E7%90%86/">心理</a>
+
+                <a href="//zltty.github.io/tags/%E6%96%87%E5%8C%96/">文化</a>
+
+                <a href="//zltty.github.io/tags/%E6%97%85%E8%A1%8C/">旅行</a>
+
+                <a
+                  href="//zltty.github.io/tags/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/"
+                  >软件使用</a
+                >
+              </div>
+            </section>
+
+            <section class="widget">
+              <h3 class="widget-title">友情链接</h3>
+              <ul class="widget-list">
+                <li>
+                  <a
+                    target="_blank"
+                    href="https://www.douban.com/people/1139054/"
+                    title="zltty的豆瓣"
+                    >zltty的豆瓣</a
+                  >
+                </li>
+
+                <li>
+                  <a target="_blank" href="#ZgotmplZ" title="在线工具"
+                    >在线工具</a
+                  >
+                </li>
+              </ul>
+            </section>
+
+            <section class="widget">
+              <h3 class="widget-title">其它</h3>
+              <ul class="widget-list">
+                <li><a href="//zltty.github.io/index.xml">文章 RSS</a></li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

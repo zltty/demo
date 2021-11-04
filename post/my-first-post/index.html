@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>李安 | zltty的博客</title>
+    <meta property="og:title" content="李安 - zltty的博客" />
+    <meta property="og:type" content="article" />
+
+    <meta
+      property="article:published_time"
+      content="2020-07-29T20:37:13&#43;08:00"
+    />
+
+    <meta
+      property="article:modified_time"
+      content="2020-07-29T20:37:13&#43;08:00"
+    />
+
+    <meta
+      name="Keywords"
+      content="电影,文化,读书笔记,zltty,创业,数据分析，博客,项目管理,python,软件架构,公众号,小程序"
+    />
+    <meta name="description" content="李安" />
+
+    <meta name="author" content="zltty" />
+    <meta property="og:url" content="//zltty.github.io/post/my-first-post/" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <script
+      type="text/javascript"
+      src="//cdn.bootcdn.net/ajax/libs/jquery/3.4.1/jquery.min.js"
+    ></script>
+
+    <link rel="stylesheet" href="/css/douban.css" />
+
+    <link rel="stylesheet" href="/css/other.css" />
+  </head>
+
+  <body>
+    <header id="header" class="clearfix">
+      <div class="container">
+        <div class="col-group">
+          <div class="site-name">
+            <a id="logo" href="//zltty.github.io"> zltty的博客 </a>
+
+            <p class="description">
+              探索发现，分享记录。
+            </p>
+          </div>
+          <div>
+            <nav id="nav-menu" class="clearfix">
+              <a class="current" href="//zltty.github.io">首页</a>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div id="body">
+      <div class="container">
+        <div class="col-group">
+          <div class="col-8" id="main">
+            <div class="res-cons">
+              <style type="text/css">
+                .post-toc {
+                  position: fixed;
+                  width: 200px;
+                  margin-left: -210px;
+                  padding: 5px 10px;
+                  font-family: Athelas, STHeiti, Microsoft Yahei, serif;
+                  font-size: 12px;
+                  border: 1px solid rgba(0, 0, 0, 0.07);
+                  border-radius: 5px;
+                  background-color: rgba(255, 255, 255, 0.98);
+                  background-clip: padding-box;
+                  -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.125);
+                  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.125);
+                  word-wrap: break-word;
+                  white-space: nowrap;
+                  -webkit-box-sizing: border-box;
+                  box-sizing: border-box;
+                  z-index: 999;
+                  cursor: pointer;
+                  max-height: 70%;
+                  overflow-y: auto;
+                  overflow-x: hidden;
+                }
+
+                .post-toc .post-toc-title {
+                  width: 100%;
+                  margin: 0 auto;
+                  font-size: 20px;
+                  font-weight: 400;
+                  text-transform: uppercase;
+                  text-align: center;
+                }
+
+                .post-toc .post-toc-content {
+                  font-size: 15px;
+                }
+
+                .post-toc .post-toc-content > nav > ul {
+                  margin: 10px 0;
+                }
+
+                .post-toc .post-toc-content ul {
+                  padding-left: 20px;
+                  list-style: square;
+                  margin: 0.5em;
+                  line-height: 1.8em;
+                }
+
+                .post-toc .post-toc-content ul ul {
+                  padding-left: 15px;
+                  display: none;
+                }
+
+                @media print, screen and (max-width: 1057px) {
+                  .post-toc {
+                    display: none;
+                  }
+                }
+              </style>
+              <div class="post-toc" style="position: absolute; top: 188px">
+                <h2 class="post-toc-title">文章目录</h2>
+                <div class="post-toc-content">
+                  <nav id="TableOfContents">
+                    <ul>
+                      <li><a href="#同类">同类</a></li>
+                      <li><a href="#气力">气力</a></li>
+                      <li>
+                        <a href="#关于电影">关于电影</a>
+                        <ul>
+                          <li><a href="#色戒">色戒</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+              <script type="text/javascript">
+                $(document).ready(function () {
+                  var postToc = $(".post-toc");
+                  if (postToc.length) {
+                    var leftPos = $("#main").offset().left;
+                    if (leftPos < 220) {
+                      postToc.css({
+                        width: leftPos - 10,
+                        "margin-left": 0 - leftPos,
+                      });
+                    }
+
+                    var t = postToc.offset().top - 20,
+                      a = {
+                        start: {
+                          position: "absolute",
+                          top: t,
+                        },
+                        process: {
+                          position: "fixed",
+                          top: 20,
+                        },
+                      };
+                    $(window).scroll(function () {
+                      var e = $(window).scrollTop();
+                      e < t ? postToc.css(a.start) : postToc.css(a.process);
+                    });
+                  }
+                });
+              </script>
+              <article class="post">
+                <header>
+                  <h1 class="post-title">李安</h1>
+                </header>
+                <date class="post-meta meta-date"> 2020年7月29日 </date>
+
+                <div class="post-meta">
+                  <span id="busuanzi_container_page_pv"
+                    >|<span id="busuanzi_value_page_pv"></span
+                    ><span> 阅读</span></span
+                  >
+                </div>
+
+                <div class="post-content">
+                  <p>为什么重读李安？</p>
+                  <ul>
+                    <li>
+                      他是和我同类型的人，想了解他如何找到自己梦想，如何坚持，如何实现
+                    </li>
+                  </ul>
+                  <h2 id="同类">同类</h2>
+                  <blockquote>
+                    <p>我的成熟期很慢，幼稚期蛮长的。</p>
+                  </blockquote>
+                  <p>性格犹豫不决</p>
+                  <p>发脾气的时候，自己受的内伤更多。</p>
+                  <p>
+                    我没有很固定的根，不仅是文化还是哪一派。每个人都是有很多混杂的元素。每个人都去尊重这个独特的个体，尊重它的复杂多样性。
+                  </p>
+                  <p>对主流世界的背面，承载人情的世界有兴趣。</p>
+                  <p>真实的面对自己。</p>
+                  <h2 id="气力">气力</h2>
+                  <p>
+                    看李安的采访，他能感受到力的玄妙。自己气力的大小，气魄，气度。
+                  </p>
+                  <p>他说他使力上面知道如何用力。</p>
+                  <p>
+                    ![image-20200727144119752](/Users/zltty/Library/Application
+                    Support/typora-user-images/image-20200727144119752.png)
+                  </p>
+                  <p>李安所说的格局是体格健壮。</p>
+                  <p>
+                    “怕才有劲。”他一直感受很多事务的力道。对老虎的恐惧提了他的神，增加了他的精神气。
+                  </p>
+                  <h2 id="关于电影">关于电影</h2>
+                  <p>选演员：感受力和关怀力。</p>
+                  <p>他是很有自尊的人，经常说骄傲和自尊。</p>
+                  <p>关于拍电影：使命的召唤，就有天分做这个。</p>
+                  <p>
+                    做导演核心：1 要有一个goodidea 听到后别人都很兴奋。2
+                    不骂人，讲清楚。
+                  </p>
+                  <p>
+                    跨文化，需要做很多的工作，但也有优势，就是看很多问题看的很准。
+                  </p>
+                  <p>
+                    表面的是文本，文本下面是什么？你要把它看穿看透。他觉得跨文化者看穿看透这个很容易。
+                  </p>
+                  <p>
+                    主题的经营，扎扎实实的颈骨和结构，铸造成一部好片子。结构上要坚固，几个大点，要立的起来。剧情推演的丝丝入扣，循序渐进的进入你要讲的主题真的要花很多的功夫。觉得推演是最弱的，如何从a——b——c，那种力量积累不起来。对白要有文化。关系的建构，解构以及建设需要精彩，情感的经营。电影是反应社会文化的。
+                  </p>
+                  <p>
+                    “
+                    没有一个真心诚意的交流，生活是很空虚的，人生是荒谬的，而深层交流不能明讲，只有靠艺术，靠电影，靠虚幻的东西，假设的东西，在里面交流，然后你感觉没那么孤单，没那么无助。
+                  </p>
+                  <p>结构，环境的推演，以及逻辑性是需要补强的。</p>
+                  <p>人生最重要的事就是阅读别人的脸，神采还有思想。</p>
+                  <p>戏剧的冲突是检视人性，要制造冲突。</p>
+                  <p>
+                    他说老的时候有一个经验：当你对人有火气时，要想想，每个人都已经尽力了。
+                  </p>
+                  <p>他总结自己成功的原因：</p>
+                  <p>1 不是很有天分也是靠勤奋。</p>
+                  <p>2 一直在持续的学习也有兴趣学习。从挫折里面学习。</p>
+                  <p>3 洞悉人性，不知道为什么时，慢慢思索。</p>
+                  <p>4 做人，有过一段时间的无业也磨练了心智。</p>
+                  <p>5 家人，朋友的辅助系统。</p>
+                  <p>6 很能忍耐，有耐心，也很能受气。</p>
+                  <ul>
+                    <li>
+                      在塑造角色的时候，要讲出来自己的潜意识，自己心底里最不可告人的秘密，特别真的表达出来。
+                    </li>
+                  </ul>
+                  <p>
+                    李安自认投入最深的电影是《色戒》。“它离我最近，离我自己的恐惧跟忌讳最深，拍完以后损耗和内伤也最重。拍完后到现在我还不敢看它，可是越不敢面对吸引力就越大。”“电影本身是造假，一个虚的东西，可是它触碰到却是我们最真实的东西。我们能做深度的沟通，可是为什么要拍电影，一部一部的拍？我自己越没把握的我越有兴趣，我相信这跟自我探索的需要有关系。我又怕别人看不懂，又怕别人看懂，一个很复杂的心情。我们拍电影的人生就这么一回事吧。”
+                  </p>
+                  <p>
+                    因为我不太弄虚的东西，我希望写实，尤其是我认为在历史上有一点任务的话，那么，艺术创作归艺术创作，我还是希望从写实的东西里面去创作。
+                  </p>
+                  <ul>
+                    <li>
+                      他希望他的电影喜不喜欢还在其次，让人家看到一种新的可能性。这种可能性也是一种希望。
+                    </li>
+                    <li>
+                      戏剧是检验人性的，在试炼的时候，人的尊严可能会剥落。
+                    </li>
+                    <li>
+                      我们一直以为电影是假的，是梦境。李安说，有时候，电影表达的才是你心里最真的那个东西，而在现实生活中，你无所不带面具，有压抑，其实是一种假象。实相反而是虚的，虚的反而是实体的东西。有时觉得演戏是很勇敢，摸到真实的东西，而真实的人有时反而是一团虚情假意。——戏假情真
+                      通过各种虚假的戏剧手段，沟通最真实的人性，人情，心灵的真挚沟通。
+                    </li>
+                    <li>文化需要一些远见。</li>
+                    <li>
+                      想要做电影的朋友就是从写剧本开始，你有一个能吸引到别人的题材，别人无法拒绝。新的题材就是新的机会。
+                    </li>
+                    <li>
+                      电影是有结构。。。小说不需要？艺术其实是一个技术，是人为造作的情境。要营造出打动的东西，需要结构。戏剧是冲突。冲突里可以看到很多人性，人性在冲突中才表现出来。
+                    </li>
+                    <li>
+                      中国文化的空间艺术，空间美学，比如讲话停顿很久，大山，大河。
+                    </li>
+                    <li>
+                      艺术第一是真，即使你在描述很丑陋的东西，真在里面。历史的真实和文化也是需要努力。艺术是浑然天成，让观众看到自己，而不是孤芳自赏，充满ego的东西。
+                    </li>
+                    <li>不要习惯失败的模式，要克服失败的这种思维惯性。</li>
+                  </ul>
+                  <h3 id="色戒">色戒</h3>
+                  <p>人性跟大我的一种抗争。</p>
+                  <p>为了千秋万代，逼死几个人也不算什么。——他是很有历史观</p>
+                  <p>
+                    “
+                    她也是靠融合各地方的文化都往里面她才能有活力。张爱玲就是很典型的，她把西方的东西、中国的文字写得那么好，两个东西都写绝了，相信所有的读者与观众都会为这样作品所吸引。”
+                  </p>
+                </div>
+
+                <div class="post-meta meta-tags">没有标签</div>
+              </article>
+
+              <div id="disqus_thread"></div>
+              <script type="application/javascript">
+                var disqus_config = function () {};
+                (function () {
+                  if (
+                    ["localhost", "127.0.0.1"].indexOf(
+                      window.location.hostname
+                    ) != -1
+                  ) {
+                    document.getElementById("disqus_thread").innerHTML =
+                      "Disqus comments not available by default when the website is previewed locally.";
+                    return;
+                  }
+                  var d = document,
+                    s = d.createElement("script");
+                  s.async = true;
+                  s.src = "//" + "zlttyblog" + ".disqus.com/embed.js";
+                  s.setAttribute("data-timestamp", +new Date());
+                  (d.head || d.body).appendChild(s);
+                })();
+              </script>
+              <noscript
+                >Please enable JavaScript to view the
+                <a href="https://disqus.com/?ref_noscript"
+                  >comments powered by Disqus.</a
+                ></noscript
+              >
+              <a href="https://disqus.com" class="dsq-brlink"
+                >comments powered by <span class="logo-disqus">Disqus</span></a
+              >
+
+              <div class="post bg-white">
+                <script
+                  src="https://utteranc.es/client.js"
+                  repo="your github repo"
+                  issue-term="pathname"
+                  theme="github-light"
+                  crossorigin="anonymous"
+                  async
+                ></script>
+              </div>
+            </div>
+
+            <footer id="footer">
+              <div>
+                &copy; 2017 <a href="//zltty.github.io">zltty的博客 By zltty</a>
+                <p><a href="https://beian.miit.gov.cn/#/Integrated/index">粤ICP备18158616号</a></p>
+              </div>
+              <br />
+              <div>
+                <div class="github-badge">
+                  <a href="https://gohugo.io/" target="_black" rel="nofollow"
+                    ><span class="badge-subject">Powered by</span
+                    ><span class="badge-value bg-blue">Hugo</span></a
+                  >
+                </div>
+                <div class="github-badge">
+                  <a
+                    href="https://github.com/flysnow-org/maupassant-hugo"
+                    target="_black"
+                    ><span class="badge-subject">Theme</span
+                    ><span class="badge-value bg-yellowgreen"
+                      >Maupassant</span
+                    ></a
+                  >
+                </div>
+              </div>
+            </footer>
+
+            <script type="text/javascript">
+              window.MathJax = {
+                tex2jax: {
+                  inlineMath: [["$", "$"]],
+                  processEscapes: true,
+                },
+              };
+            </script>
+            <script
+              src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"
+              async
+            ></script>
+
+            <a id="rocket" href="#top"></a>
+            <script
+              type="text/javascript"
+              src="/js/totop.js?v=0.0.0"
+              async=""
+            ></script>
+
+            <script type="application/javascript">
+              var doNotTrack = false;
+              if (!doNotTrack) {
+                window.ga =
+                  window.ga ||
+                  function () {
+                    (ga.q = ga.q || []).push(arguments);
+                  };
+                ga.l = +new Date();
+                ga("create", "225213626", "auto");
+
+                ga("send", "pageview");
+              }
+            </script>
+            <script
+              async
+              src="https://www.google-analytics.com/analytics.js"
+            ></script>
+
+            <script
+              type="text/javascript"
+              src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"
+              async
+            ></script>
+
+            <script src="/js/douban.js"></script>
+          </div>
+
+          <div id="secondary">
+            <section class="widget">
+              <form
+                id="search"
+                action="//zltty.github.io/search/"
+                method="get"
+                accept-charset="utf-8"
+                target="_blank"
+                _lpchecked="1"
+              >
+                <input
+                  type="text"
+                  name="q"
+                  maxlength="20"
+                  placeholder="Search"
+                />
+                <input
+                  type="hidden"
+                  name="sitesearch"
+                  value="//zltty.github.io"
+                />
+                <button type="submit" class="submit icon-search"></button>
+              </form>
+            </section>
+
+            <section class="widget">
+              <h3 class="widget-title">最近文章</h3>
+              <ul class="widget-list">
+                <li>
+                  <a href="//zltty.github.io/post/stork/" title="2020年股票总结"
+                    >2020年股票总结</a
+                  >
+                </li>
+
+                <li>
+                  <a href="//zltty.github.io/post/20201211/" title="20201211"
+                    >20201211</a
+                  >
+                </li>
+
+                <li>
+                  <a href="//zltty.github.io/post/20201130/" title="20201130"
+                    >20201130</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    href="//zltty.github.io/post/20201110%E8%9A%82%E8%9A%81%E6%8B%9B%E8%82%A1%E4%B9%A6/"
+                    title="蚂蚁招股书"
+                    >蚂蚁招股书</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    href="//zltty.github.io/post/1108%E8%AF%BB%E4%B9%A6%E4%BC%9A/"
+                    title="1108读书会"
+                    >1108读书会</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    href="//zltty.github.io/post/20201031/"
+                    title="最近发生的两件小事"
+                    >最近发生的两件小事</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    href="//zltty.github.io/post/%E8%80%90%E5%BF%83/"
+                    title="耐心"
+                    >耐心</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    href="//zltty.github.io/post/%E6%88%91%E5%92%8C%E6%88%91%E7%9A%84%E5%AE%B6%E4%B9%A1/"
+                    title="我和我的家乡"
+                    >我和我的家乡</a
+                  >
+                </li>
+
+                <li>
+                  <a href="//zltty.github.io/post/math_note/" title="Math_note"
+                    >Math_note</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    href="//zltty.github.io/post/visionabouttime/"
+                    title="只言片语记录"
+                    >只言片语记录</a
+                  >
+                </li>
+              </ul>
+            </section>
+
+            <section class="widget">
+              <h3 class="widget-title">分类</h3>
+              <ul class="widget-list">
+                <li>
+                  <a
+                    href="//zltty.github.io/categories/%E5%86%85%E5%BE%97%E5%BF%83%E6%BA%90/"
+                    >内得心源 (6)</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    href="//zltty.github.io/categories/%E5%A4%A9%E4%BA%BA%E4%B9%8B%E9%99%85/"
+                    >天人之际 (1)</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    href="//zltty.github.io/categories/%E5%B7%A5%E4%BD%9C%E6%80%9D%E8%80%83%E6%8A%80%E8%83%BD/"
+                    >工作思考技能 (7)</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    href="//zltty.github.io/categories/%E7%BA%A2%E8%89%B2%E7%94%9F%E6%B4%BB/"
+                    >红色生活 (7)</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    href="//zltty.github.io/categories/%E8%A1%8C%E4%B8%87%E9%87%8C%E8%B7%AF/"
+                    >行万里路 (1)</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    href="//zltty.github.io/categories/%E8%AF%BB%E4%B9%A6%E4%B9%90%E4%BA%8B/"
+                    >读书乐事 (5)</a
+                  >
+                </li>
+              </ul>
+            </section>
+
+            <section class="widget">
+              <h3 class="widget-title">标签</h3>
+              <div class="tagcloud">
+                <a href="//zltty.github.io/tags/%E4%BA%BA%E6%80%A7/">人性</a>
+
+                <a
+                  href="//zltty.github.io/tags/%E5%9B%BD%E5%86%85%E6%97%B6%E4%BA%8B/"
+                  >国内时事</a
+                >
+
+                <a href="//zltty.github.io/tags/%E5%BF%83%E7%90%86/">心理</a>
+
+                <a href="//zltty.github.io/tags/%E6%96%87%E5%8C%96/">文化</a>
+
+                <a href="//zltty.github.io/tags/%E6%97%85%E8%A1%8C/">旅行</a>
+
+                <a
+                  href="//zltty.github.io/tags/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/"
+                  >软件使用</a
+                >
+              </div>
+            </section>
+
+            <section class="widget">
+              <h3 class="widget-title">友情链接</h3>
+              <ul class="widget-list">
+                <li>
+                  <a
+                    target="_blank"
+                    href="https://www.douban.com/people/1139054/"
+                    title="zltty的豆瓣"
+                    >zltty的豆瓣</a
+                  >
+                </li>
+
+                <li>
+                  <a target="_blank" href="#ZgotmplZ" title="在线工具"
+                    >在线工具</a
+                  >
+                </li>
+              </ul>
+            </section>
+
+            <section class="widget">
+              <h3 class="widget-title">其它</h3>
+              <ul class="widget-list">
+                <li><a href="//zltty.github.io/index.xml">文章 RSS</a></li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

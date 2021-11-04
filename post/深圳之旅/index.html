@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>重访亲友 | zltty的博客</title>
+    <meta property="og:title" content="重访亲友 - zltty的博客" />
+    <meta property="og:type" content="article" />
+
+    <meta
+      property="article:published_time"
+      content="2020-08-30T17:41:54&#43;08:00"
+    />
+
+    <meta
+      property="article:modified_time"
+      content="2020-08-30T17:41:54&#43;08:00"
+    />
+
+    <meta
+      name="Keywords"
+      content="电影,文化,读书笔记,zltty,创业,数据分析，博客,项目管理,python,软件架构,公众号,小程序"
+    />
+    <meta name="description" content="重访亲友" />
+
+    <meta name="author" content="zltty" />
+    <meta
+      property="og:url"
+      content="//zltty.github.io/post/%E6%B7%B1%E5%9C%B3%E4%B9%8B%E6%97%85/"
+    />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <script
+      type="text/javascript"
+      src="//cdn.bootcdn.net/ajax/libs/jquery/3.4.1/jquery.min.js"
+    ></script>
+
+    <link rel="stylesheet" href="/css/douban.css" />
+
+    <link rel="stylesheet" href="/css/other.css" />
+  </head>
+
+  <body>
+    <header id="header" class="clearfix">
+      <div class="container">
+        <div class="col-group">
+          <div class="site-name">
+            <a id="logo" href="//zltty.github.io"> zltty的博客 </a>
+
+            <p class="description">
+              探索发现，分享记录。
+            </p>
+          </div>
+          <div>
+            <nav id="nav-menu" class="clearfix">
+              <a class="current" href="//zltty.github.io">首页</a>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div id="body">
+      <div class="container">
+        <div class="col-group">
+          <div class="col-8" id="main">
+            <div class="res-cons">
+              <style type="text/css">
+                .post-toc {
+                  position: fixed;
+                  width: 200px;
+                  margin-left: -210px;
+                  padding: 5px 10px;
+                  font-family: Athelas, STHeiti, Microsoft Yahei, serif;
+                  font-size: 12px;
+                  border: 1px solid rgba(0, 0, 0, 0.07);
+                  border-radius: 5px;
+                  background-color: rgba(255, 255, 255, 0.98);
+                  background-clip: padding-box;
+                  -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.125);
+                  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.125);
+                  word-wrap: break-word;
+                  white-space: nowrap;
+                  -webkit-box-sizing: border-box;
+                  box-sizing: border-box;
+                  z-index: 999;
+                  cursor: pointer;
+                  max-height: 70%;
+                  overflow-y: auto;
+                  overflow-x: hidden;
+                }
+
+                .post-toc .post-toc-title {
+                  width: 100%;
+                  margin: 0 auto;
+                  font-size: 20px;
+                  font-weight: 400;
+                  text-transform: uppercase;
+                  text-align: center;
+                }
+
+                .post-toc .post-toc-content {
+                  font-size: 15px;
+                }
+
+                .post-toc .post-toc-content > nav > ul {
+                  margin: 10px 0;
+                }
+
+                .post-toc .post-toc-content ul {
+                  padding-left: 20px;
+                  list-style: square;
+                  margin: 0.5em;
+                  line-height: 1.8em;
+                }
+
+                .post-toc .post-toc-content ul ul {
+                  padding-left: 15px;
+                  display: none;
+                }
+
+                @media print, screen and (max-width: 1057px) {
+                  .post-toc {
+                    display: none;
+                  }
+                }
+              </style>
+              <div class="post-toc" style="position: absolute; top: 188px">
+                <h2 class="post-toc-title">文章目录</h2>
+                <div class="post-toc-content">
+                  <nav id="TableOfContents">
+                    <ul>
+                      <li>
+                        <a href="#感触最深的">感触最深的</a>
+                        <ul>
+                          <li></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="#小爸">小爸</a>
+                        <ul>
+                          <li></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+              <script type="text/javascript">
+                $(document).ready(function () {
+                  var postToc = $(".post-toc");
+                  if (postToc.length) {
+                    var leftPos = $("#main").offset().left;
+                    if (leftPos < 220) {
+                      postToc.css({
+                        width: leftPos - 10,
+                        "margin-left": 0 - leftPos,
+                      });
+                    }
+
+                    var t = postToc.offset().top - 20,
+                      a = {
+                        start: {
+                          position: "absolute",
+                          top: t,
+                        },
+                        process: {
+                          position: "fixed",
+                          top: 20,
+                        },
+                      };
+                    $(window).scroll(function () {
+                      var e = $(window).scrollTop();
+                      e < t ? postToc.css(a.start) : postToc.css(a.process);
+                    });
+                  }
+                });
+              </script>
+              <article class="post">
+                <header>
+                  <h1 class="post-title">重访亲友</h1>
+                </header>
+                <date class="post-meta meta-date"> 2020年8月30日 </date>
+
+                <div class="post-meta">
+                  <span>|</span>
+
+                  <span class="meta-category"
+                    ><a
+                      href="//zltty.github.io/categories/%E8%A1%8C%E4%B8%87%E9%87%8C%E8%B7%AF"
+                      >行万里路</a
+                    ></span
+                  >
+                </div>
+
+                <div class="post-meta">
+                  <span id="busuanzi_container_page_pv"
+                    >|<span id="busuanzi_value_page_pv"></span
+                    ><span> 阅读</span></span
+                  >
+                </div>
+
+                <div class="post-content">
+                  <h2 id="感触最深的">感触最深的</h2>
+                  <p>住在小爸家，和小妈聊天的过程挺触动我的。</p>
+                  <h4 id="自信">自信</h4>
+                  <p>
+                    小妈很敞开心扉的给我说她的状态不好，第一天见她穿着很朴素，长相虽然年轻但是穿的却像大妈一样沉闷和无聊。她说她年轻的时候就得糖尿病，两年前经历过一次视网膜脱落，所以心里很郁闷，很担心自己的眼睛出问题，而且单位因为她经常请病假等对她也有了看法，她最近在家休息也在调整状态。
+                    我说她做饭好吃，人也年轻，很鼓励她。第二天她穿了一条绿短裤配白T恤，我觉得很精神。也劝说她可以穿一下以前的裙子等等，她兴致勃勃的翻出了之前的裙子，穿好，让我帮她参谋，穿裙子的她让我觉得人焕然一新。我建议她可以买一点浅色的裙子穿穿。她也很开心说收获了久违的自信。自信是一个美丽异常的词。可以在心里开出一朵花。我规劝她，一旦精神不好就马上穿鞋出门。这样就和社会自然接触，就能很好的调整自己的状态。她也很受鼓励，第二天的装扮已经完全不沉闷了。
+                  </p>
+                  <p>
+                    <strong
+                      >自信，善良，智慧，宽容，这每一个小词都沉甸甸，每一个词都是人生的课题。</strong
+                    >
+                  </p>
+                  <p>
+                    她还给我说她遗憾儿子的是没有让儿子觉得自信。她的母亲很优秀，教育她们的时候是很鼓励她们姊妹的。小妈说很开心我来，让她找回久违的自信。她在状态不好时，容易一个人闷着，我的到来，像一条鲶鱼，搅动了她的生活，给她带来一些新鲜。而我在劝说她时，其实也在劝说自己。助人等于助己。我之前也经历了一段暗淡迷茫的时光。在劝她出门多接触人的时候，我也在劝说我自己走出自己孤独的世界，去到更大的社会中，找到自己的亮点，也是找回自我的自信点。
+                  </p>
+                  <p>
+                    调整自己的状态是非常重要的，<strong>把自己从悲伤中打捞出来</strong>。然后找到自己身上最闪亮的星，带着它开出花。在郁闷悲伤的状态里，就会没有行动力，自卑，自责，乌云铺面。只要走出来，自己就焕然一新，做事也会更有动力。也就短短的两三天，在和小妈的沟通中看到她的转变，由衷的为她欣慰。也鼓励自己<strong>掌握这种能力</strong>，在生活中拯救打捞自己，调整状态到最佳，享受美好人生。
+                  </p>
+                  <h4 id="干净">干净</h4>
+                  <p>
+                    我们对话还有一个主题是干净。小妈是一个非常爱干净的人，家里收拾的窗明几净，她受不了别人身上的汗味。也拿一个共同朋友做了反例。我之前一直没有意识到干净和清洁的力量，直到看到一篇文章说，家里不落杂尘，有烟火气，温馨，是一个家最美好的气息，也是家族兴旺的根基。我很赞同，以后要多洗澡，多洗衣服，把自己捯饬干净，身上带一股清香味而不要邋遢，衣服干净整洁。这才是在积极向上的生活。她提到就是因为某个同事身上有汗味，很影响别人对他的印象，失去了很多机会。还是要养成干净的生活习惯。
+                  </p>
+                  <p>
+                    有个小细节，我问她找皮筋时，她短发已经很久不用了，还是很快的帮我找出来。而我小爸也是把收集的各个地方的地图分门别类的放在盒子里，很容易找到，也是很好的整理。
+                  </p>
+                  <h4 id="一句话的分量">一句话的分量</h4>
+                  <p>
+                    小妈家族都是做商业。一进门聊了几句，小妈就说，真正赚钱是别人来找你，而不是你去找别人。你去找的项目都很难成。叶子三年前也说过类似的话。这些感悟，都是源自小妈这么多年的从商经历，虽然是一句话，分量很重的。我有时，很容易就遗漏了别人对我的一些叮嘱。
+                  </p>
+                  <p>
+                    小妈也直言不讳的给我说让我别抖腿，我以前还真没注意。我现在很珍惜别人给我的这些建议。”忠言逆耳利于行“
+                    小爸对我的劝告和小妈的这些劝我还蛮记在心里的。
+                  </p>
+                  <p>
+                    有时，有些人说的一句话背后可能会有很多故事。要用心重视起来。
+                  </p>
+                  <h4 id="家务">家务</h4>
+                  <p>
+                    小妈文化程度不高，性格内向，她很喜欢做家务，从她这里，我学会了如何煲汤，如何去掉汗味，用小苏打和白醋可以洗掉很多油腻，泡白衣物。学会了苦瓜炒豆豉，丝瓜炒海鲜，又清淡又好吃和养生，和小爸学会了荔枝泡酒、桂圆泡酒和青梅酒。生活是很有滋味的，自己去做这些食物，会很美好也很有成就感。
+                  </p>
+                  <h2 id="小爸">小爸</h2>
+                  <h4 id="惠州的海">惠州的海</h4>
+                  <p>
+                    真是难忘的体验呀！第一次来到离海如此近的海景房。下楼就是沙滩，而且是太平洋。在海里游泳，浪花汹涌的拍过来，把我打到海里，我努力的挣扎起来再走向海的深处。飘在浪里看到鱼儿腾空翻越，也是从来没经历过的，拿个渔网就好像能捞到海鱼。后面学会伏在浪花上，享受浪的波动，太难忘的体验了。
+                  </p>
+                  <p>
+                    第一次六点早起去看海上日出，美到极致。
+                    第一次去到小荒岛，体验自然瀑布淋浴。
+                    第一次捡到这么多的贝壳和不知名的珊瑚，以前的海滩从来没有捡到如此众多的海物。太喜欢大海了，喜欢海鲜，喜欢沙滩，喜欢大海边的生活。
+                  </p>
+                  <h4 id="原来">原来</h4>
+                  <p>
+                    原来，住在别人家和她们一起生活，体验她们的生活方式真的也能学到很多。
+                    原来，虽然久久不联系，亲情依旧在，还是要去除心里的隔膜主动的去联系和了解。
+                    原来，很多人其实也在等待你的到来。
+                  </p>
+                  <p>
+                    这次去深圳，主动联系了小爸一家，也得到他们热情的接待，在相互沟通交往中，也收获了亲情，经验，信息，独特的体验。
+                  </p>
+                </div>
+
+                <div class="post-meta meta-tags">
+                  <ul class="clearfix">
+                    <li>
+                      <a href="//zltty.github.io/tags/%E6%97%85%E8%A1%8C"
+                        >旅行</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </article>
+
+              <div id="disqus_thread"></div>
+              <script type="application/javascript">
+                var disqus_config = function () {};
+                (function () {
+                  if (
+                    ["localhost", "127.0.0.1"].indexOf(
+                      window.location.hostname
+                    ) != -1
+                  ) {
+                    document.getElementById("disqus_thread").innerHTML =
+                      "Disqus comments not available by default when the website is previewed locally.";
+                    return;
+                  }
+                  var d = document,
+                    s = d.createElement("script");
+                  s.async = true;
+                  s.src = "//" + "zlttyblog" + ".disqus.com/embed.js";
+                  s.setAttribute("data-timestamp", +new Date());
+                  (d.head || d.body).appendChild(s);
+                })();
+              </script>
+              <noscript
+                >Please enable JavaScript to view the
+                <a href="https://disqus.com/?ref_noscript"
+                  >comments powered by Disqus.</a
+                ></noscript
+              >
+              <a href="https://disqus.com" class="dsq-brlink"
+                >comments powered by <span class="logo-disqus">Disqus</span></a
+              >
+
+              <div class="post bg-white">
+                <script
+                  src="https://utteranc.es/client.js"
+                  repo="your github repo"
+                  issue-term="pathname"
+                  theme="github-light"
+                  crossorigin="anonymous"
+                  async
+                ></script>
+              </div>
+            </div>
+
+            <footer id="footer">
+              <div>
+                &copy; 2017 <a href="//zltty.github.io">zltty的博客 By zltty</a>
+                <p>
+                  <a href="https://beian.miit.gov.cn/#/Integrated/index"
+                    >粤ICP备18158616号</a
+                  >
+                </p>
+              </div>
+              <br />
+              <div>
+                <div class="github-badge">
+                  <a href="https://gohugo.io/" target="_black" rel="nofollow"
+                    ><span class="badge-subject">Powered by</span
+                    ><span class="badge-value bg-blue">Hugo</span></a
+                  >
+                </div>
+                <div class="github-badge">
+                  <a
+                    href="https://github.com/flysnow-org/maupassant-hugo"
+                    target="_black"
+                    ><span class="badge-subject">Theme</span
+                    ><span class="badge-value bg-yellowgreen"
+                      >Maupassant</span
+                    ></a
+                  >
+                </div>
+              </div>
+            </footer>
+
+            <script type="text/javascript">
+              window.MathJax = {
+                tex2jax: {
+                  inlineMath: [["$", "$"]],
+                  processEscapes: true,
+                },
+              };
+            </script>
+            <script
+              src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"
+              async
+            ></script>
+
+            <a id="rocket" href="#top"></a>
+            <script
+              type="text/javascript"
+              src="/js/totop.js?v=0.0.0"
+              async=""
+            ></script>
+
+            <script type="application/javascript">
+              var doNotTrack = false;
+              if (!doNotTrack) {
+                window.ga =
+                  window.ga ||
+                  function () {
+                    (ga.q = ga.q || []).push(arguments);
+                  };
+                ga.l = +new Date();
+                ga("create", "225213626", "auto");
+
+                ga("send", "pageview");
+              }
+            </script>
+            <script
+              async
+              src="https://www.google-analytics.com/analytics.js"
+            ></script>
+
+            <script
+              type="text/javascript"
+              src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"
+              async
+            ></script>
+
+            <script src="/js/douban.js"></script>
+          </div>
+
+          <div id="secondary">
+            <section class="widget">
+              <form
+                id="search"
+                action="//zltty.github.io/search/"
+                method="get"
+                accept-charset="utf-8"
+                target="_blank"
+                _lpchecked="1"
+              >
+                <input
+                  type="text"
+                  name="q"
+                  maxlength="20"
+                  placeholder="Search"
+                />
+                <input
+                  type="hidden"
+                  name="sitesearch"
+                  value="//zltty.github.io"
+                />
+                <button type="submit" class="submit icon-search"></button>
+              </form>
+            </section>
+
+            <section class="widget">
+              <h3 class="widget-title">最近文章</h3>
+              <ul class="widget-list">
+                <li>
+                  <a href="//zltty.github.io/post/stork/" title="2020年股票总结"
+                    >2020年股票总结</a
+                  >
+                </li>
+
+                <li>
+                  <a href="//zltty.github.io/post/20201211/" title="20201211"
+                    >20201211</a
+                  >
+                </li>
+
+                <li>
+                  <a href="//zltty.github.io/post/20201130/" title="20201130"
+                    >20201130</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    href="//zltty.github.io/post/20201110%E8%9A%82%E8%9A%81%E6%8B%9B%E8%82%A1%E4%B9%A6/"
+                    title="蚂蚁招股书"
+                    >蚂蚁招股书</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    href="//zltty.github.io/post/1108%E8%AF%BB%E4%B9%A6%E4%BC%9A/"
+                    title="1108读书会"
+                    >1108读书会</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    href="//zltty.github.io/post/20201031/"
+                    title="最近发生的两件小事"
+                    >最近发生的两件小事</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    href="//zltty.github.io/post/%E8%80%90%E5%BF%83/"
+                    title="耐心"
+                    >耐心</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    href="//zltty.github.io/post/%E6%88%91%E5%92%8C%E6%88%91%E7%9A%84%E5%AE%B6%E4%B9%A1/"
+                    title="我和我的家乡"
+                    >我和我的家乡</a
+                  >
+                </li>
+
+                <li>
+                  <a href="//zltty.github.io/post/math_note/" title="Math_note"
+                    >Math_note</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    href="//zltty.github.io/post/visionabouttime/"
+                    title="只言片语记录"
+                    >只言片语记录</a
+                  >
+                </li>
+              </ul>
+            </section>
+
+            <section class="widget">
+              <h3 class="widget-title">分类</h3>
+              <ul class="widget-list">
+                <li>
+                  <a
+                    href="//zltty.github.io/categories/%E5%86%85%E5%BE%97%E5%BF%83%E6%BA%90/"
+                    >内得心源 (6)</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    href="//zltty.github.io/categories/%E5%A4%A9%E4%BA%BA%E4%B9%8B%E9%99%85/"
+                    >天人之际 (1)</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    href="//zltty.github.io/categories/%E5%B7%A5%E4%BD%9C%E6%80%9D%E8%80%83%E6%8A%80%E8%83%BD/"
+                    >工作思考技能 (7)</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    href="//zltty.github.io/categories/%E7%BA%A2%E8%89%B2%E7%94%9F%E6%B4%BB/"
+                    >红色生活 (7)</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    href="//zltty.github.io/categories/%E8%A1%8C%E4%B8%87%E9%87%8C%E8%B7%AF/"
+                    >行万里路 (1)</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    href="//zltty.github.io/categories/%E8%AF%BB%E4%B9%A6%E4%B9%90%E4%BA%8B/"
+                    >读书乐事 (5)</a
+                  >
+                </li>
+              </ul>
+            </section>
+
+            <section class="widget">
+              <h3 class="widget-title">标签</h3>
+              <div class="tagcloud">
+                <a href="//zltty.github.io/tags/%E4%BA%BA%E6%80%A7/">人性</a>
+
+                <a
+                  href="//zltty.github.io/tags/%E5%9B%BD%E5%86%85%E6%97%B6%E4%BA%8B/"
+                  >国内时事</a
+                >
+
+                <a href="//zltty.github.io/tags/%E5%BF%83%E7%90%86/">心理</a>
+
+                <a href="//zltty.github.io/tags/%E6%96%87%E5%8C%96/">文化</a>
+
+                <a href="//zltty.github.io/tags/%E6%97%85%E8%A1%8C/">旅行</a>
+
+                <a
+                  href="//zltty.github.io/tags/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/"
+                  >软件使用</a
+                >
+              </div>
+            </section>
+
+            <section class="widget">
+              <h3 class="widget-title">友情链接</h3>
+              <ul class="widget-list">
+                <li>
+                  <a
+                    target="_blank"
+                    href="https://www.douban.com/people/1139054/"
+                    title="zltty的豆瓣"
+                    >zltty的豆瓣</a
+                  >
+                </li>
+
+                <li>
+                  <a target="_blank" href="#ZgotmplZ" title="在线工具"
+                    >在线工具</a
+                  >
+                </li>
+              </ul>
+            </section>
+
+            <section class="widget">
+              <h3 class="widget-title">其它</h3>
+              <ul class="widget-list">
+                <li><a href="//zltty.github.io/index.xml">文章 RSS</a></li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
