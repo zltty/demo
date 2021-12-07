@@ -7,8 +7,8 @@
  */
  @font-face {
     font-family: 'icomoon';
-    src:url('fonts/icomoon.woff?-i5ysuu') format('woff'),
-        url('fonts/icomoon.ttf?-i5ysuu') format('truetype');
+    src:url('http://resource.mitoch.cn/gitee/icomoon.woff?-i5ysuu') format('woff'),
+        url('http://resource.mitoch.cn/gitee/icomoon.ttf?-i5ysuu') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
